@@ -1,5 +1,7 @@
 package edu.ucsy.array.demo;
 
+import java.util.Arrays;
+
 public class UnlimitedIntegerArray {
 	
 	private int [] array;
@@ -9,14 +11,8 @@ public class UnlimitedIntegerArray {
 	}
 	
 	public void add(int number) {
-		int [] temp = new int[array.length + 1];
-		
-		for(int i = 0; i < array.length; i ++) {
-			temp[i] = array[i];
-		}
-		
-		temp[temp.length - 1] = number;
-		array = temp;
+		array = Arrays.copyOf(array, array.length + 1);
+		array[array.length - 1] = number;
 	}
 	
 	public int getTotal() {

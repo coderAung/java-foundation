@@ -22,9 +22,6 @@ public class DemoVersion2 {
 
 			int number = getIntInput("Enter a number : ");
 			
-			int width = getIntInput("Enter width : ");
-			int height = getIntInput("Enter height : ");
-			
 			if (number == 0) {
 				break;
 			}
