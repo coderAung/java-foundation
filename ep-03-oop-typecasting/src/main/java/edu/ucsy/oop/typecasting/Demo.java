@@ -29,5 +29,8 @@ public class Demo {
 		Animal anAnimal = goldFish;
 		
 		Cat someCat = anAnimal instanceof Cat ? (Cat) anAnimal : null;
+	
+		dog2.eat();
+		someCat.eat();
 	}
 }
